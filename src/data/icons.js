@@ -1,0 +1,58 @@
+import {
+  Building2,
+  Cable,
+  CalendarClock,
+  ClipboardCheck,
+  CloudSun,
+  Compass,
+  Eye,
+  Gauge,
+  Grid3x3,
+  Hammer,
+  Headset,
+  House,
+  LayoutGrid,
+  MapPin,
+  MessageCircle,
+  Plug,
+  Ruler,
+  SearchCheck,
+  SolarPanel,
+  Sparkles,
+  Sun,
+  Target,
+  Wrench,
+  Zap,
+} from 'lucide-react'
+
+// Data files store plain string keys (API-friendly); components resolve them here.
+export const iconMap = {
+  building: Building2,
+  cable: Cable,
+  calendar: CalendarClock,
+  clipboard: ClipboardCheck,
+  cloudSun: CloudSun,
+  compass: Compass,
+  eye: Eye,
+  gauge: Gauge,
+  grid: Grid3x3,
+  hammer: Hammer,
+  headset: Headset,
+  home: House,
+  layout: LayoutGrid,
+  mapPin: MapPin,
+  message: MessageCircle,
+  plug: Plug,
+  ruler: Ruler,
+  search: SearchCheck,
+  solarPanel: SolarPanel,
+  sparkles: Sparkles,
+  sun: Sun,
+  target: Target,
+  wrench: Wrench,
+  zap: Zap,
+}
+
+export function getIcon(name) {
+  return iconMap[name] ?? Sun
+}
